@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+ <!--navbar-->
+ <div class="navvbar">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="imag" src="images/logo.png" alt="" />
+        </a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="package.html">Package</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+
+        </ul>
+        <div class="btton">
+          <a class="btn btn-light" href="login.html">Log in</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  
+    <!-- modal -->
+
+    <div class="modal fade" tabindex="-1" id="booking-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Book a tour</h5>
+              <button type="button"class="btn-close"data-bs-dismiss="modal"aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="row g-2">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input id="email1"type="email"class="form-control"placeholder="Your email"/>
+                      <label for="email1">Email address</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <select id="select1" class="form-select">
+                        <option>Paris, France - 1200 dt</option>
+                        <option>London, England - 1700 dt</option>
+                        <option>Dubai, UAE - 2500 dt</option>
+                        <option>Rome, Italy - 1200 dt</option>
+                        <option>Bangkok, Thailand - 1700 dt</option>
+                        <option>Kuala Lumpur, Malaysia - 1700 dt</option>
+                        <option>Rome, Italy - 1200 dt</option>
+
+                      </select>
+                      <label for="email1">Email address</label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">  Close</button>
+              <button type="button" class="btn btn-primary">checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- img -->
+  
+    <img class="imagg" src="images/licensed-image.jpg" alt="tunis" >
+    <!-- img end -->
+
+<!-- Package -->
+<section id="packages"class="pt-5">
+    <h2 class="text-center my-5">Packages</h2>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card my-2" >
+                <img src="images/paris3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Paris, France - 1200 dt</h5>
+                  <p class="card-text">Discover the City of Lights with our Paris, France package. Experience the famous landmarks, the rich history, and the delicious cuisine of this enchanting city.</p>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5"data-bs-toggle="modal"data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card my-2" >
+                <img src="images/london5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">London, England - 1700 dt</h5>
+                  <p class="card-text">Explore London with our unbeatable travel package! Enjoy top attractions, comfortable accommodations, and convenient transportation. Book now and save big!</p>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5"data-bs-toggle="modal"data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card my-2" >
+                <img src="images/dubai2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dubai, UAE - 2500 dt</h5>
+                  <p class="card-text">Explore London with our unbeatable travel package! Enjoy top attractions, comfortable accommodations, and convenient transportation. Book now and save big!</p>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5"data-bs-toggle="modal"data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card my-2" >
+                <img src="images/rome2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Rome, Italy - 1200 dt</h5>
+                  <p class="card-text">Experience the Eternal City with our Rome travel package. Enjoy historic landmarks, delicious cuisine, and stunning architecture. Book now and make unforgettable memories.</p>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5"data-bs-toggle="modal"data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card my-2" >
+                <img src="images/thailand5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bangkok, Thailand - 1700 dt</h5>
+                  <p class="card-text">Experience the vibrant culture of Bangkok with our travel package. Discover ancient temples, bustling markets, and delicious street food. Book now and make unforgettable memories!</p>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5"data-bs-toggle="modal"data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card my-2" >
+                <img src="images/kuala.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kuala Lumpur, Malaysia - 1700 dt</h5>
+                  <p class="card-text">Discover the vibrant city of Kuala Lumpur with our all-inclusive travel package. Explore the famous landmarks, indulge in the local cuisine, and create unforgettable memories. Book now</p>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5"data-bs-toggle="modal"data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- package ends  -->
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Footer Start -->
+   <div
+   class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
+   data-wow-delay="0.1s"
+ >
+   <div class="container py-5">
+     <div class="row g-5">
+       <div class="col-lg-3 col-md-6">
+         <h4 class="text-white mb-3">Company</h4>
+         <a class="btn btn-link" href="about.html">About Us</a>
+         <a class="btn btn-link" href="Contact.html">Contact Us</a>
+         <a class="btn btn-link" href="">Privacy Policy</a>
+         <a class="btn btn-link" href="">Terms & Condition</a>
+         <a class="btn btn-link" href="faq.html">FAQs & Help</a>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h4 class="text-white mb-3">Contact</h4>
+         <p class="mb-2">
+           <i class="fa fa-map-marker-alt me-3"></i>20 Rue de Tolède, Tunis
+           2092
+         </p>
+         <p class="mb-2">
+           <i class="fa fa-phone-alt me-3"></i>+216 93126686
+         </p>
+         <p class="mb-2">
+           <i class="fa fa-envelope me-3"></i>info@epictravel.com
+         </p>
+         <div class="d-flex pt-2">
+           <a class="btn btn-outline-light btn-social" href=""
+             ><i class="fab fa-twitter"></i
+           ></a>
+           <a class="btn btn-outline-light btn-social" href=""
+             ><i class="fab fa-facebook-f"></i
+           ></a>
+           <a class="btn btn-outline-light btn-social" href=""
+             ><i class="fab fa-youtube"></i
+           ></a>
+           <a class="btn btn-outline-light btn-social" href=""
+             ><i class="fab fa-linkedin-in"></i
+           ></a>
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h4 class="text-white mb-3">Gallery</h4>
+         <div class="row g-2 pt-2">
+           <div class="col-4">
+             <img
+               class="img-fluid bg-light p-1"
+               src="images/paris2.jpg"
+               alt=""
+             />
+           </div>
+           <div class="col-4">
+             <img
+               class="img-fluid bg-light p-1"
+               src="images/paris.jpg"
+               alt=""
+             />
+           </div>
+           <div class="col-4">
+             <img
+               class="img-fluid bg-light p-1"
+               src="images/lisbon.jpg"
+               alt=""
+             />
+           </div>
+           <div class="col-4">
+             <img
+               class="img-fluid bg-light p-1"
+               src="images/london.jpg"
+               alt=""
+             />
+           </div>
+           <div class="col-4">
+             <img
+               class="img-fluid bg-light p-1"
+               src="images/barcelona.jpg"
+               alt=""
+             />
+           </div>
+           <div class="col-4">
+             <img
+               class="img-fluid bg-light p-1"
+               src="images/seoul.jpg"
+               alt=""
+             />
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h4 class="text-white mb-3">Newsletter</h4>
+         <p>
+           Sign up for our newsletter today to receive weekly updates and
+           special offers!.
+         </p>
+         <div class="position-relative mx-auto" style="max-width: 400px">
+           <input
+             class="form-control border-primary w-100 py-3 ps-4 pe-5"
+             type="text"
+             placeholder="Your email"
+           />
+           <button
+             type="button"
+             class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+           >
+             SignUp
+           </button>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="container">
+     <div class="copyright">
+       <div class="row">
+         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+           &copy; <a class="border-bottom" href="#">EPIC TRAVEL</a>, All
+           Right Reserved.
+         </div>
+         <div class="col-md-6 text-center text-md-end">
+           <div class="footer-menu">
+             <a href="index.html">Home</a>
+             <a href="">Cookies</a>
+             <a href="">Help</a>
+             <a href="faq.html">FQAs</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Footer End -->
+
+ <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+   integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+   crossorigin="anonymous"
+ ></script>
+</body>
+</html>
